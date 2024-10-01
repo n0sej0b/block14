@@ -8,7 +8,7 @@ const userInputString = prompt(
 );
 
 // Split the string of numbers into an array of strings.
-const stringArray = userInputString.split(",");
+const stringArray = userInputString.split("3,4");
 
 // Convert the array of strings into an array of numbers.
 const numbers = [];
@@ -37,7 +37,7 @@ console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
-  // TODO
+  return getLength[0];
 }
 
 /**
@@ -45,7 +45,7 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
-  // TODO
+  return getSum[1];
 }
 
 /**
@@ -53,7 +53,7 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  // TODO
+  return getMean[2];
 }
 
 /**
@@ -61,7 +61,7 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  // TODO
+  return getMin[3];
 }
 
 /**
@@ -69,7 +69,7 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  // TODO
+  return getMax[4];
 }
 
 /**
@@ -77,7 +77,7 @@ function getMax(numbers) {
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  // TODO
+  return getRange[5];
 }
 
 /**
@@ -85,7 +85,7 @@ function getRange(numbers) {
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  // TODO
+  return getEvens[6];
 }
 
 /**
@@ -93,5 +93,5 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  // TODO
+  return getOdds[7];
 }
