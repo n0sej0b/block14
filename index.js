@@ -58,46 +58,44 @@ function getSum(numbers) {
  * @param {number[]} numbers an array of integers
  * @returns {number} the mean of the numbers
  */
-function getMean(numbers) {
-  return getMean[2];
-}
+const numbers = [getMean];
+let sum = 0;
+numbers.forEach((number) => {
+  sum += number;
+})
+let avg = sum / numbers.length;
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the smallest of the numbers
  */
-function getMin(numbers) {
-  return getMin[3];
-}
+const numbers = [2,5,6,8]
+const minValue = Math.min(...numbers);
+
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the largest of the numbers
  */
-function getMax(numbers) {
-  return getMax[4];
-}
+const numbers = [2,5,6,8]
+const maxValue = Math.max(...numbers);
+
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the range of the numbers (max - min)
  */
-function getRange(numbers) {
-  return getRange[5];
-}
+const range = (start, end) => Array(end - start + 1).fill().map((_, idx) => start + idx);
+console.log(range(1, 10));
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the even numbers in the array
  */
-function getEvens(numbers) {
-  return getEvens[6];
-}
+const evens = numbers.filter(num => num % 2 === 0);
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the odd numbers in the array
  */
-function getOdds(numbers) {
-  return getOdds[7];
-}
+const odds = numbers.filter(num => num % 1 === 0);
