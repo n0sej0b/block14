@@ -8,7 +8,7 @@ const userInputString = prompt(
 );
 
 // Split the string of numbers into an array of strings.
-const stringArray = userInputString.split("3,4");
+const stringArray = userInputString.split(",");
 
 // Convert the array of strings into an array of numbers.
 const numbers = [];
@@ -58,44 +58,55 @@ function getSum(numbers) {
  * @param {number[]} numbers an array of integers
  * @returns {number} the mean of the numbers
  */
-const numbers = [getMean];
-let sum = 0;
-numbers.forEach((number) => {
+function getMean(numbers){
+  let sum = 0
+  numbers.forEach((number) => {
   sum += number;
 })
 let avg = sum / numbers.length;
-
+  return avg
+}
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the smallest of the numbers
  */
-const numbers = [2,5,6,8]
-const minValue = Math.min(...numbers);
-
+function getMin(numbers) {
+let minValue = Math.min(...numbers);
+  return minValue
+}
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the largest of the numbers
  */
-const numbers = [2,5,6,8]
-const maxValue = Math.max(...numbers);
+function getMax(numbers) {
+  let maxValue = Math.max(...numbers);
+    return maxValue
+  }
 
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number} the range of the numbers (max - min)
  */
-const range = (start, end) => Array(end - start + 1).fill().map((_, idx) => start + idx);
-console.log(range(1, 10));
+function getRange(numbers){
+  let max = getMax(numbers)
+  let min = getMin(numbers)
+    return  max - min
+}
+
 
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the even numbers in the array
  */
-const evens = numbers.filter(num => num % 2 === 0);
-
+function getEvens(numbers){
+ return numbers.filter(num => num % 2 === 0);
+}
 /**
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the odd numbers in the array
  */
-const odds = numbers.filter(num => num % 1 === 0);
+function getOdds(numbers){
+  return numbers.filter(num => num % 2 === 1);
+}
